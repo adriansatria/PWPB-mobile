@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">XII-IntentExplicitWithParcelable</string>
+    <string name="dial_number">DIAL NUMBER</string>
+    <string name="move_with_result">PINDAH ACTIVITY UNTUK RESULT</string>
+    <string name="result_from_activity"></string>
+    <string name="choose_number"></string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+</resources>
