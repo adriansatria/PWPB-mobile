@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/doctor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.050"></ImageView>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CODING DOCTOR"
+        android:textStyle="bold|italic"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image1"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/relativebg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgrelative"
+        android:layout_marginTop="250dp">
+
+        <TextView
+            android:id="@+id/textinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please input your data..."
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/editputextra"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textinfo"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Name"
+            android:drawableStart="@drawable/icons8_male_user_40px"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext"></EditText>
+
+        <Button
+            android:id="@+id/buttonsubmit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textColor="#ffffff"
+            android:drawableStart="@drawable/icons8_natural_user_interface_2_40px"
+            android:paddingLeft="10dp"
+            android:paddingRight="50dp"
+            android:layout_below="@id/editputextra"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"></Button>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <ImageView
+        android:id="@+id/imageversion"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/icons8_new_64px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.180"></ImageView>
+
+    <TextView
+        android:id="@+id/textversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vC.04"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/imageversion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textversion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You was using the latest version"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textversion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"></TextView>
+
+    <Button
+        android:id="@+id/buttontap"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="TAP"
+        android:textColor="#ffffff"
+        android:drawableStart="@drawable/icons8_natural_user_interface_2_40px"
+        android:background="@drawable/button"
+        android:paddingRight="30dp"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/textversion2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"></Button>
+
+    <Button
+        android:id="@+id/buttonbackac3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:drawableStart="@drawable/icons8_natural_user_interface_2_40px"
+        android:paddingRight="35dp"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/buttontap"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
